@@ -17,7 +17,11 @@ const Hero = () => {
 
         <div className="flex flex-col  text-center  w-full m-auto  mt-10 items-center">
           <h2 className="text-4xl font-bold  mb-5 max-w-[30rem]">
-            I turn businesses like yours into websites that sell.
+            I turn businesses like yours <br />
+            into{" "}
+            <span className="bg-gradient-to-r from-[#FF8660] to-[#9A33FF] bg-clip-text text-transparent">
+              websites that sell.
+            </span>
           </h2>
 
           <p className=" text-sm text-secondary leading-7 mb-2 max-w-[30rem] text-pretty">

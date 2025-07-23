@@ -9,7 +9,7 @@ const MyJourney = () => {
           <div className="grid md:grid-cols-2 place-items-center gap-3  m-auto">
             <div className="card w-full  flex flex-col justify-center p-5 m-auto  rounded-md shadow-lg text-sm">
               <h2 className="text-md"> Frontend Mentor Challenges</h2>
-              <h3 className="text-sm text-accent">
+              <h3 className="text-sm text-accent w-full">
                 Building Real-World Skills
               </h3>
               <p className="text-xs font-normal text-faded mt-3">
@@ -21,8 +21,8 @@ const MyJourney = () => {
             </div>
             {/* card */}
             <div className="card w-full  flex flex-col justify-center p-5 m-auto  rounded-md shadow-lg text-sm">
-              <h2 className="text-md"> Personal Projects</h2>
-              <h3 className="text-sm text-accent">Learning by Doing</h3>
+              <h2 className="text-md w-full"> Personal Projects</h2>
+              <h3 className="text-sm text-accent w-full">Learning by Doing</h3>
               <p className="text-xs font-normal text-faded mt-3">
                 I’ve built responsive web apps using ReactJS, Tailwind CSS, and
                 Vite, experimenting with modern tools to create user-focused

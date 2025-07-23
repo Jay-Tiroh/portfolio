@@ -2,14 +2,14 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col text-sm text-faded justify-center casual gap-5 max-w-[45rem] px-10">
-      <h1 className=" text-white">Let’s Connect!</h1>
-      <p className="  mt-5 ">
+    <div className="flex flex-col text-sm text-faded justify-center semiformal gap-5 max-w-[35rem] px-10 text-center">
+      <h1 className=" text-white ">Let’s Connect!</h1>
+      <p className="  ">
         I’m eager to join a cross-functional team that values enhancing lives
-        through accessible design. Have a project in mind? Let’s collaborate to
-        build something impactful.
+        through accessible design. <br /> Have a project in mind? Let’s
+        collaborate to build something impactful.
       </p>
-      <span className="casual">uchechijethro1@gmail.com</span>
+      <span className="">uchechijethro1@gmail.com</span>
       <div className="social-links flex items-center gap-5">
         <a href="" className="instagram">
           <svg
@@ -25,7 +25,7 @@ const Contact = () => {
           </svg>
         </a>
 
-        <a href="" className="github">
+        <a href="" className="github ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

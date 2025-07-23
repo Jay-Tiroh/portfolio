@@ -13,7 +13,6 @@
   --color-faded: rgba(255, 255, 255, 0.7);
   --color-dim: rgba(255, 255, 255, 0.5);
   --color-neon: #b86bff;
-  /* --animation-marquee: marquee var(--duration, 30s) linear infinite; */
 }
 
 body {
@@ -99,19 +98,6 @@ em {
   @apply text-indigo-200  not-italic;
 }
 
-/* .gradient {
-
-  @apply md:absolute;
-  width: var(--width); 
-  height: calc(var(--width) * 1.1195);
-
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #763cac 0%,
-    rgba(50, 15, 133, 0) 100%
-  );
-} */
-
 .card {
   box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
@@ -162,7 +148,7 @@ em {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid var(--color-faded); /* blinking cursor */
+  border-right: 2px solid var(--color-faded);
   width: 0;
   animation: typing var(--duration, 2s) steps(var(--steps, 20)) forwards,
     blink 0.7s step-end infinite;
@@ -196,7 +182,6 @@ em {
 }
 
 .neon-img {
-  /* animation: glow-pulse 1.8s ease-in-out infinite; */
   fill: var(--color-secondary);
   stroke: var(--color-dim);
   @apply size-10;
