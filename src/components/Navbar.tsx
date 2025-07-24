@@ -37,22 +37,22 @@ const Navbar = () => {
         !border-faded/20 semiformal
        
         
-        shadow-lg md:hidden flex-col top-20 right-5 w-64 ${
+        shadow-lg md:!hidden flex-col top-20 right-5 w-64 ${
           menuOpen ? "show" : ""
         } `}
         >
-          <span className="nav-link" onClick={() => setMenuOpen(false)}>
-            <a href="#home">Home</a>
-          </span>
-          <span className="nav-link" onClick={() => setMenuOpen(false)}>
-            <a href="#about">About Me</a>
-          </span>
-          <span className="nav-link" onClick={() => setMenuOpen(false)}>
-            <a href="#projects">Projects</a>
-          </span>
-          <span className="nav-link" onClick={() => setMenuOpen(false)}>
-            <a href="#contact">Hire Me</a>
-          </span>
+          <a href="#home" className="nav-link">
+            <span onClick={() => setMenuOpen(false)}>Home</span>
+          </a>
+          <a href="#about" className="nav-link">
+            <span onClick={() => setMenuOpen(false)}>About Me</span>
+          </a>
+          <a href="#projects" className="nav-link">
+            <span onClick={() => setMenuOpen(false)}>Projects</span>
+          </a>
+          <a href="#contact" className="nav-link">
+            <span onClick={() => setMenuOpen(false)}>Hire Me</span>
+          </a>
         </nav>
         <div className="menu" onClick={() => setMenuOpen((prev) => !prev)}>
           <svg

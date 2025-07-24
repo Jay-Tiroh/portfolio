@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Jethro Uchechi | Frontend Developer",
   description:
     "I build fast, responsive websites with React, Next.js, and modern web tech.",
+  icons: {
+    icon: "/avatar.ico",
+  },
 };
 
 export default function RootLayout({

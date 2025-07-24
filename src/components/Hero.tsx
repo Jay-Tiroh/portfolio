@@ -34,9 +34,11 @@ const Hero = () => {
             <div className="rounded-full border-white border bg-white text-tertiary px-10  cursor-pointer py-3 hover:bg-transparent hover:text-white/90 transition-colors duration-300 ease-in-out">
               <a href="#contact">Get In Touch</a>
             </div>
-            <div className="rounded-full border-white/90 border bg-transparent text-white   px-10  cursor-pointer py-3 hover:bg-white/90 hover:text-tertiary transition-colors duration-300 ease-in-out">
-              Download CV
-            </div>
+            <a href="/resume.pdf" download="Jethro-Uchechi-CV.pdf">
+              <div className="rounded-full border-white/90 border bg-transparent text-white   px-10  cursor-pointer py-3 hover:bg-white/90 hover:text-tertiary transition-colors duration-300 ease-in-out">
+                Download CV
+              </div>
+            </a>
           </div>
         </div>
       </div>
