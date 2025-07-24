@@ -3,7 +3,10 @@ import Animate from "./Animate";
 const Intro = () => {
   return (
     <Animate type="pop-y">
-      <div className="flex flex-col justify-center text-center px-10  semiformal text-secondary">
+      <div
+        className="flex flex-col justify-center text-center px-10  semiformal text-secondary"
+        id="about"
+      >
         <h1 className="">A Bit About Me</h1>
 
         <p className="mt-2 max-w-[30rem] text-sm">

@@ -17,7 +17,7 @@ const MyJourney = () => {
                 skills in HTML, CSS, JavaScript, and ReactJS, focusing on
                 responsive design and clean code.
               </p>
-              <div className=" journey-btn">View Projects</div>
+              {/* <div className=" journey-btn">View Projects</div> */}
             </div>
             {/* card */}
             <div className="card w-full  flex flex-col justify-center p-5 m-auto  rounded-md shadow-lg text-sm">
@@ -28,7 +28,7 @@ const MyJourney = () => {
                 Vite, experimenting with modern tools to create user-focused
                 interfaces.
               </p>
-              <div className=" journey-btn">View Projects</div>
+              {/* <div className=" journey-btn">View Projects</div> */}
             </div>
           </div>
         </Animate>

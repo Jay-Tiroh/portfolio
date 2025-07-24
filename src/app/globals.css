@@ -15,6 +15,11 @@
   --color-neon: #b86bff;
 }
 
+/* global.css or tailwind base layer */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url("/assets/images/bg-lg.svg");
   background-size: cover;
@@ -217,11 +222,11 @@ em {
 }
 
 .nav-link {
-  @apply hover:bg-black/20 md:hover:bg-transparent w-full text-center p-2 hover:text-secondary cursor-pointer;
+  @apply hover:bg-faded/50 md:hover:bg-transparent w-full text-center p-2 hover:text-tertiary cursor-pointer border-b border-b-faded/20 md:border-b-0 md:hover:border-b-0 transition-all duration-300 ease-in-out;
 }
-.active {
+/* .active {
   @apply bg-faded/40 md:bg-transparent  text-white md:hover:bg-transparent  hover:bg-faded/40 hover:text-white;
-}
+} */
 
 .nav {
   @apply hidden;
@@ -229,6 +234,19 @@ em {
 
 .show {
   @apply flex;
+}
+
+.form > textarea {
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* Safari and Chrome */
+  -ms-overflow-style: none; /* IE and Edge */
+  @apply focus-within:!border-none focus-within:!outline-none h-[13rem];
+}
+
+.form > textarea::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {

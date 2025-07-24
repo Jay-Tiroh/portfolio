@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Animate from "./Animate";
 import Stack from "./Stack";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -15,10 +16,19 @@ interface Project {
 const MyProjects = () => {
   const projects: Project[] = [
     {
-      title: "Space Tourism website",
+      title: "Furnisheet E-commerce Website",
+      subtitle: "Clone of Furnisheet",
+      description:
+        "Furniture rental platform with modern design and responsive user experience.",
+      stack: ["react", "typescript", "tailwind", "css", "next"],
+      image: "/assets/images/furnisheet.png",
+      link: "https://furnisheet-nextjs-9xbf.vercel.app/",
+    },
+    {
+      title: "Space Tourism Website",
       subtitle: "Frontend Mentor Challenge",
       description:
-        "A space exploration site. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, rerum!",
+        "Space exploration site with smooth navigation, visuals, and mobile responsiveness.",
       stack: ["react", "js", "tailwind", "css"],
       image: "/assets/images/space.png",
       link: "#",
@@ -27,7 +37,7 @@ const MyProjects = () => {
       title: "Basic Calculator",
       subtitle: "Personal Project",
       description:
-        "A simple calculator app. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, rerum!",
+        "Performs basic arithmetic operations with clean layout and minimal UI.",
       stack: ["html", "js", "tailwind", "css"],
       image: "/assets/images/calculator.png",
       link: "https://simple-calculator-gbgi.vercel.app/",
@@ -36,25 +46,7 @@ const MyProjects = () => {
       title: "Product List with Cart",
       subtitle: "Frontend Mentor Challenge",
       description:
-        "A simple shopping menu with cart. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, rerum!",
-      stack: ["html", "js", "tailwind", "css"],
-      image: "/assets/images/product-list.png",
-      link: "https://chizuru-product-list.vercel.app/",
-    },
-    {
-      title: "Product List with Cart",
-      subtitle: "Frontend Mentor Challenge",
-      description:
-        "A simple shopping menu with cart. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, rerum!",
-      stack: ["html", "js", "tailwind", "css"],
-      image: "/assets/images/product-list.png",
-      link: "https://chizuru-product-list.vercel.app/",
-    },
-    {
-      title: "Product List with Cart",
-      subtitle: "Frontend Mentor Challenge",
-      description:
-        "A simple shopping menu with cart. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, rerum!",
+        "Simple cart interface with product selection and quantity adjustment feature.",
       stack: ["html", "js", "tailwind", "css"],
       image: "/assets/images/product-list.png",
       link: "https://chizuru-product-list.vercel.app/",
@@ -64,18 +56,21 @@ const MyProjects = () => {
   const [showAll, setShowAll] = useState(false);
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
   return (
-    <div className=" flex flex-col w-full max-w-[45rem] px-10 my-10 semiformal">
+    <div
+      className=" flex flex-col w-full max-w-[45rem] px-10 my-10 semiformal"
+      id="projects"
+    >
       <h1 className="text-center mb-5">My Projects</h1>
       {/* project list */}
       <div className="flex flex-col gap-5 my-5 semiformal shadow-xl ">
         {visibleProjects.map((project, index) => (
           <Animate type="pop-x" key={index}>
             <div
-              className={`project-item flex flex-col md:flex-row gap-6 ${
+              className={`project-item flex md:h-[15rem] md:overflow-y-hidden  md:flex-row gap-6 w-full flex-col-reverse ${
                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               }`}
             >
-              <div className="description w-full md:w-1/2 h-full p-5">
+              <div className="description w-full  md:w-1/2 md:h-full p-5">
                 <h2>{project.title}</h2>
                 <h3>{project.subtitle}</h3>
                 <p className="project-p">{project.description}</p>
@@ -83,9 +78,16 @@ const MyProjects = () => {
                 <Stack stack={project.stack} />
               </div>
 
-              <div className="img w-full md:w-1/2 h-full relative overflow-hidden group">
+              <div className="img w-full  md:w-1/2 md:h-full relative overflow-hidden group">
                 <a href={project.link} target="_blank">
-                  <img src={project.image} alt="" className="project-img" />
+                  <Image
+                    width={500}
+                    height={300}
+                    src={project.image}
+                    alt={project.title}
+                    className="project-img"
+                  />
+
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 pointer-events-none"></div>
                   <div className="absolute bottom-4 left-4 z-10 group-hover:text-white text-transparent flex group-hover:fill-white fill-transparent items-center gap-2 transition-colors duration-500 ease-in-out">
                     <span className="text-md">Visit site</span>

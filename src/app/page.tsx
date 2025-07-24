@@ -6,7 +6,7 @@ import MyProjects from "@/components/MyProject";
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-start items-center space-y-10 overflow-x-hidden">
+    <div className=" flex flex-col justify-start items-center space-y-10 overflow-x-hidden pb-10">
       <Hero />
       <Intro />
       <MyJourney />

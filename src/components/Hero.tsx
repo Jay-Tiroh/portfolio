@@ -32,7 +32,7 @@ const Hero = () => {
 
           <div className="flex gap-3 justify-center font-bold items-center mt-5 text-xs md:text-[1rem] text-nowrap">
             <div className="rounded-full border-white border bg-white text-tertiary px-10  cursor-pointer py-3 hover:bg-transparent hover:text-white/90 transition-colors duration-300 ease-in-out">
-              Get In Touch
+              <a href="#contact">Get In Touch</a>
             </div>
             <div className="rounded-full border-white/90 border bg-transparent text-white   px-10  cursor-pointer py-3 hover:bg-white/90 hover:text-tertiary transition-colors duration-300 ease-in-out">
               Download CV

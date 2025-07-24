@@ -17,24 +17,42 @@ const Navbar = () => {
           &lt;chizuru_jethro&gt;
         </div>
         <div className=" items-center gap-5 semiformal hidden md:flex text-nowrap">
-          <span className="nav-link active">Home</span>
-          <span className="nav-link">About Me</span>
-          <span className="nav-link">Hire Me</span>
+          <span className="nav-link">
+            <a href="#home">Home</a>
+          </span>
+          <span className="nav-link">
+            <a href="#about">About Me</a>
+          </span>
+          <span className="nav-link">
+            <a href="#projects">Projects</a>
+          </span>
+          <span className="nav-link">
+            <a href="#contact">Hire Me</a>
+          </span>
         </div>
         <nav
-          className={`nav flex justify-between items-center  md:w-1/2 lg:w-1/3 md:static absolute bg-dim/10 
+          className={`nav flex justify-between items-center  md:w-1/2 lg:w-1/3 md:static absolute bg-tertiary/70 
         backdrop-blur-md 
         border 
-        !border-faded/20
+        !border-faded/20 semiformal
        
         
-        shadow-lg md:shadow-none md:bg-transparent md:backdrop-blur-none md:flex-row md:border-none flex-col top-30 right-5 w-64 ${
+        shadow-lg md:hidden flex-col top-20 right-5 w-64 ${
           menuOpen ? "show" : ""
         } `}
         >
-          <span className="nav-link active">Home</span>
-          <span className="nav-link">About Me</span>
-          <span className="nav-link">Hire Me</span>
+          <span className="nav-link" onClick={() => setMenuOpen(false)}>
+            <a href="#home">Home</a>
+          </span>
+          <span className="nav-link" onClick={() => setMenuOpen(false)}>
+            <a href="#about">About Me</a>
+          </span>
+          <span className="nav-link" onClick={() => setMenuOpen(false)}>
+            <a href="#projects">Projects</a>
+          </span>
+          <span className="nav-link" onClick={() => setMenuOpen(false)}>
+            <a href="#contact">Hire Me</a>
+          </span>
         </nav>
         <div className="menu" onClick={() => setMenuOpen((prev) => !prev)}>
           <svg
