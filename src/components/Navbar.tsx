@@ -4,14 +4,14 @@ import React, { useState } from "react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
-    <section className="casual text-white text-sm select-none ">
+    <section className="casual text-white text-sm select-none  ">
       <div
         className="navbar bg-[#222222]/70 
         backdrop-blur-md 
         border-b 
         border-faded/20 
         
-        shadow-lg  w-full flex justify-between items-center py-5 px-10 relative"
+        shadow-lg  w-full flex justify-between md:justify-center  items-center py-5 px-10 relative "
       >
         <div className="logo w-1/3 md:w-1/2 text-lg font-bold text-accent">
           &lt;chizuru_jethro&gt;
