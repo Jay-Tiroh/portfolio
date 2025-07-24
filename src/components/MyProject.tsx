@@ -78,7 +78,7 @@ const MyProjects = () => {
                 <Stack stack={project.stack} />
               </div>
 
-              <div className="img h-[18rem] w-full  md:w-1/2 md:h-full relative overflow-hidden group">
+              <div className="img h-[15rem] w-full  md:w-1/2 md:h-full relative overflow-hidden group">
                 <a href={project.link} target="_blank">
                   <Image
                     width={500}
