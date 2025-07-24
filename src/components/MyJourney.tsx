@@ -8,7 +8,7 @@ const MyJourney = () => {
         <Animate type="pop-y">
           <div className="grid md:grid-cols-2 place-items-center gap-3  m-auto">
             <div className="card w-full  flex flex-col justify-center p-5 m-auto  rounded-md shadow-lg text-sm">
-              <h2 className="text-md"> Frontend Mentor Challenges</h2>
+              <h2 className="text-md w-full"> Frontend Mentor Challenges</h2>
               <h3 className="text-sm text-accent w-full">
                 Building Real-World Skills
               </h3>

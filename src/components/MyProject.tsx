@@ -33,15 +33,7 @@ const MyProjects = () => {
       image: "/assets/images/space.png",
       link: "#",
     },
-    {
-      title: "Basic Calculator",
-      subtitle: "Personal Project",
-      description:
-        "Performs basic arithmetic operations with clean layout and minimal UI.",
-      stack: ["html", "js", "tailwind", "css"],
-      image: "/assets/images/calculator.png",
-      link: "https://simple-calculator-gbgi.vercel.app/",
-    },
+
     {
       title: "Product List with Cart",
       subtitle: "Frontend Mentor Challenge",
@@ -50,6 +42,15 @@ const MyProjects = () => {
       stack: ["html", "js", "tailwind", "css"],
       image: "/assets/images/product-list.png",
       link: "https://chizuru-product-list.vercel.app/",
+    },
+    {
+      title: "Basic Calculator",
+      subtitle: "Personal Project",
+      description:
+        "Performs basic arithmetic operations with clean layout and minimal UI.",
+      stack: ["html", "js", "tailwind", "css"],
+      image: "/assets/images/calculator.png",
+      link: "https://simple-calculator-gbgi.vercel.app/",
     },
   ];
 

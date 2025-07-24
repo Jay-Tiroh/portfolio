@@ -55,7 +55,7 @@ const Contact = () => {
         </button>
       </form>
 
-      <span className="text-xs text-gray-500">
+      <span className="text-xs text-faded">
         Or email me directly at uchechijethro1@gmail.com
       </span>
       <div className="social-links flex items-center gap-5">
