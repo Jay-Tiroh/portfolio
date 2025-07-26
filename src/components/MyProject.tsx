@@ -31,7 +31,7 @@ const MyProjects = () => {
         "Space exploration site with smooth navigation, visuals, and mobile responsiveness.",
       stack: ["react", "js", "tailwind", "css"],
       image: "/assets/images/space.png",
-      link: "https://github.com/Jay-Tiroh/firebase-app",
+      link: "https://firebase-app-y84x.vercel.app/",
     },
 
     {
