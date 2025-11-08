@@ -16,6 +16,24 @@ interface Project {
 const MyProjects = () => {
   const projects: Project[] = [
     {
+      title: "Anchor Clone",
+      subtitle: "Fintech Project",
+      description:
+        "Full-fledged fintech web app featuring dashboards, dummy authentication, and multiple sections.",
+      stack: ["next", "tailwind", "typescript"],
+      image: "/assets/images/anchor.png",
+      link: "https://anchor-clone.vercel.app/",
+    },
+    {
+      title: "Superdao Landing Page",
+      subtitle: "Landing Page Project",
+      description:
+        "An all-in-one platform to start, manage, and grow a DAO with a clean and modern layout.",
+      stack: ["next", "tailwind", "typescript"],
+      image: "/assets/images/superdao.png",
+      link: "https://superdao-landing.vercel.app/",
+    },
+    {
       title: "Furnisheet E-commerce Website",
       subtitle: "Clone of Furnisheet",
       description:
@@ -31,9 +49,8 @@ const MyProjects = () => {
         "Space exploration site with smooth navigation, visuals, and mobile responsiveness.",
       stack: ["react", "js", "tailwind", "css"],
       image: "/assets/images/space.png",
-      link: "https://github.com/Jay-Tiroh/firebase-app",
+      link: "https://firebase-app-y84x.vercel.app/",
     },
-
     {
       title: "Product List with Cart",
       subtitle: "Frontend Mentor Challenge",
