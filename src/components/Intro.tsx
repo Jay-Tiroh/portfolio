@@ -1,4 +1,3 @@
-import React from "react";
 import Animate from "./Animate";
 const Intro = () => {
   return (
@@ -18,11 +17,11 @@ const Intro = () => {
         </p>
 
         <p className="mt-5 max-w-[30rem] text-sm">
-          As a self-taught frontend developer, I’m driven by a passion for
-          creating seamless, user-focused web experiences. From tackling
-          Frontend Mentor challenges to building personal projects with React
-          and Vite, I’m constantly learning and pushing my limits to craft
-          interfaces that make an impact.
+          I'm a self-taught frontend developer currently expanding into mobile
+          through Rise Academy. I've sharpened my skills through Frontend Mentor
+          challenges and personal projects, building with React, Vite, Next.js,
+          and React Native. I care about clean interfaces, good UX, and shipping
+          things that work.
         </p>
       </div>
     </Animate>

@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import Image from "next/image";
+import { useState } from "react";
 import Animate from "./Animate";
 import Stack from "./Stack";
-import Image from "next/image";
 
 interface Project {
   title: string;
@@ -23,6 +23,16 @@ const MyProjects = () => {
       stack: ["next", "tailwind", "typescript"],
       image: "/assets/images/anchor.png",
       link: "https://anchor-clone.vercel.app/",
+    },
+
+    {
+      title: "CloudHub ",
+      subtitle: "Landing Page Project",
+      description:
+        "An interactive landing page with theme toggling, scroll based GSAP animations, and fully responsive design.",
+      stack: ["next", "tailwind", "typescript"],
+      image: "/assets/images/cloudhub.png",
+      link: "https://cloudhub-steel.vercel.app/",
     },
     {
       title: "Superdao Landing Page",
@@ -84,7 +94,7 @@ const MyProjects = () => {
         {visibleProjects.map((project, index) => (
           <Animate type="pop-x" key={index}>
             <div
-              className={`project-item flex md:h-[15rem] md:overflow-y-hidden  md:flex-row gap-6 w-full flex-col-reverse ${
+              className={`project-item flex md:max-h-[18rem] md:overflow-y-hidden  md:flex-row gap-6 w-full flex-col-reverse ${
                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               }`}
             >
@@ -96,7 +106,7 @@ const MyProjects = () => {
                 <Stack stack={project.stack} />
               </div>
 
-              <div className="img h-[15rem] w-full  md:w-1/2 md:h-full relative overflow-hidden group">
+              <div className="img w-full  md:w-1/2 md:h-full relative overflow-hidden group">
                 <a href={project.link} target="_blank">
                   <Image
                     width={500}
@@ -122,9 +132,9 @@ const MyProjects = () => {
                       >
                         <g>
                           <path
-                            d="M110.6,72.58c0-3.19,2.59-5.78,5.78-5.78c3.19,0,5.78,2.59,5.78,5.78v33.19c0,4.71-1.92,8.99-5.02,12.09 
-                    c-3.1,3.1-7.38,5.02-12.09,5.02H17.11c-4.71,0-8.99-1.92-12.09-5.02c-3.1-3.1-5.02-7.38-5.02-12.09V17.19 
-                    C0,12.48,1.92,8.2,5.02,5.1C8.12,2,12.4,0.08,17.11,0.08h32.98c3.19,0,5.78,2.59,5.78,5.78c0,3.19-2.59,5.78-5.78,5.78H17.11 
+                            d="M110.6,72.58c0-3.19,2.59-5.78,5.78-5.78c3.19,0,5.78,2.59,5.78,5.78v33.19c0,4.71-1.92,8.99-5.02,12.09
+                    c-3.1,3.1-7.38,5.02-12.09,5.02H17.11c-4.71,0-8.99-1.92-12.09-5.02c-3.1-3.1-5.02-7.38-5.02-12.09V17.19
+                    C0,12.48,1.92,8.2,5.02,5.1C8.12,2,12.4,0.08,17.11,0.08h32.98c3.19,0,5.78,2.59,5.78,5.78c0,3.19-2.59,5.78-5.78,5.78H17.11
                     c-1.52,0-2.9,0.63-3.91,1.63c-1.01,1.01-1.63,2.39-1.63,3.91v88.58c0,1.52,0.63,2.9,1.63,3.91c1.01,1.01,2.39,1.63,3.91,1.63
                     h87.95c1.52,0,2.9-0.63,3.91-1.63s1.63-2.39,1.63-3.91V72.58L110.6,72.58z M112.42,17.46L54.01,76.6
                     c-2.23,2.27-5.89,2.3-8.16,0.07c-2.27-2.23-2.3-5.89-0.07-8.16l56.16-56.87H78.56c-3.19,0-5.78-2.59-5.78-5.78
