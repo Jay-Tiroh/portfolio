@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 const Contact = () => {
   return (
@@ -27,7 +26,7 @@ const Contact = () => {
 
           window.open(
             `https://mail.google.com/mail/?view=cm&fs=1&to=uchechijethro1@gmail.com&su=${subject}&body=${body}`,
-            "_blank"
+            "_blank",
           );
         }}
       >
@@ -49,7 +48,7 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:bg-gradient-to-r hover:to-[#FF8660] hover:from-[#9A33FF] text-white font-medium tracking-wide py-2 px-4 rounded-md transition duration-300 w-48 cursor-pointer m-auto"
+          className="bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:bg-gradient-to-r hover:to-[#FF8660] hover:from-[#9A33FF] text-white font-medium tracking-wide py-2 px-4 rounded-md transition-all duration-300 ease-in-out w-48 cursor-pointer m-auto"
         >
           Send Message
         </button>

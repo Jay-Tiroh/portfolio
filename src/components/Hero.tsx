@@ -1,6 +1,5 @@
-import React from "react";
-import Stack from "./Stack";
 import { Marquee } from "./Marquee";
+import Stack from "./Stack";
 const Hero = () => {
   return (
     <div className="semi-formal select-none ">
@@ -25,9 +24,10 @@ const Hero = () => {
           </h2>
 
           <p className=" text-sm text-secondary leading-7 mb-2 max-w-[30rem] text-pretty">
-            I’m Jethro Uchechi — a frontend developer focused on building
-            high-performance websites with React, Next.js, and TypeScript. From
-            layout to logic, I create experiences that convert.
+            I'm Jethro Uchechi — a frontend developer building high-performance
+            web experiences with React, Next.js, and TypeScript, now expanding
+            into mobile with React Native. From layout to logic, I create
+            products that convert.
           </p>
 
           <div className="flex gap-3 justify-center font-bold items-center mt-5 text-xs md:text-[1rem] text-nowrap">
@@ -47,9 +47,9 @@ const Hero = () => {
           Experience With
         </h1>
         <p className="text-center max-w-[30rem] px-10">
-          I create modern, user-focused interfaces with React, Next.js, Tailwind
-          CSS, and Vite — delivering fast, reliable, and maintainable solutions
-          that help businesses stand out and grow online.
+          I build modern, user-focused interfaces for web and mobile — using
+          React, Next.js, Tailwind CSS, Vite, and React Native to deliver fast,
+          maintainable solutions that help businesses grow.
         </p>
         <Marquee>
           <Stack
