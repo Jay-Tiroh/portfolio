@@ -94,7 +94,7 @@ const MyProjects = () => {
         {visibleProjects.map((project, index) => (
           <Animate type="pop-x" key={index}>
             <div
-              className={`project-item flex md:max-h-[18rem] md:overflow-y-hidden  md:flex-row gap-6 w-full flex-col-reverse ${
+              className={`project-item flex md:max-h-72 md:overflow-y-hidden  md:flex-row gap-6 w-full flex-col-reverse ${
                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               }`}
             >
@@ -106,7 +106,7 @@ const MyProjects = () => {
                 <Stack stack={project.stack} />
               </div>
 
-              <div className="img w-full  md:w-1/2 md:h-full relative overflow-hidden group">
+              <div className="img w-full max-h-72  md:w-1/2 md:h-full relative overflow-hidden group">
                 <a href={project.link} target="_blank">
                   <Image
                     width={500}
